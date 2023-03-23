@@ -1,0 +1,382 @@
+<style>@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+</style>body {
+  box-sizing: border-box;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+a img {
+  width: 60%;
+}
+
+img {
+  width: 100%;
+}
+
+#header {
+  background: #fff;
+}
+
+#header a {
+  color: #002658;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+ul.navbar-nav .nav-item {
+  padding: 0px 15px;
+}
+
+h2 span {
+  color: #35fff3;
+}
+
+.navbar-brand {
+  font-size: 30px;
+}
+
+i.bi.bi-list {
+  color: #000;
+  font-size: 40px;
+}
+
+.nft-btn {
+  background: rgb(0, 175, 210);
+  background: linear-gradient(98deg, rgba(0, 175, 210, 1) 0%, rgba(17, 110, 176, 1) 50%);
+  color: #fff;
+}
+
+/* main title CSS */
+.main-title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+/* Hero CSS */
+
+#hero h2 {
+  font-size: 42px;
+}
+
+#hero h1 {
+  color: #35fff3;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.nft-carousel {
+  position: relative;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  top: unset !important;
+  right: 0;
+  bottom: -45px;
+  width: 30px;
+  justify-content: flex-end;
+}
+
+.bi-arrow-left,
+.bi-arrow-right {
+  border: 1px solid #fcfcfc;
+  padding: 5px 8px;
+  color: #35fff3;
+}
+
+.bi-arrow-left:hover,
+.bi-arrow-right:hover {
+  background: #423e57;
+}
+
+.carousel-control-prev {
+  left: unset;
+  right: 100px;
+}
+
+/* About Seciton  */
+#about {
+  padding: 100px 0;
+  background: rgb(20, 4, 41);
+  background: linear-gradient(90deg,
+      rgba(20, 4, 41, 1) 0%,
+      rgba(65, 67, 106, 1) 100%);
+}
+
+#coverage-section {
+  padding: 100px 0;
+  background: #C0F4FE;
+}
+
+/* CTA CSS  */
+#cta {
+  background: #10011f;
+  text-align: center;
+  padding: 100px 0;
+}
+
+/* Road Map CSS */
+#choise-us {
+  background: #002658;
+  padding: 100px 0;
+}
+
+#footer-choise-us {
+  background: #002658;
+  padding: 100px 0;
+}
+
+#after {
+  padding-top: 80px;
+}
+
+.list-area .title {
+  margin-bottom: 25px;
+}
+
+.list>ol {
+  counter-reset: number;
+  list-style-type: none;
+}
+
+.list ol ul li {
+  list-style-type: none;
+}
+
+.list ol li {
+  line-height: 47px;
+}
+
+.list ol li span {
+  padding-left: 20px;
+}
+
+/* The "\a0" is a space */
+.list ol>li::before {
+  counter-increment: number;
+  content: counter(number) "\a0";
+}
+
+/* FAQ's CSS */
+#faq {
+  background: #150625;
+  padding: 100px 0;
+}
+
+.accordion-item {
+  background: #18073a;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.accordion-item h2 button {}
+
+.accordion-button:not(.collapsed) {
+  background: #18073a;
+  color: #fff;
+}
+
+.accordion-button {
+  background: #18073a;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: unset !important;
+  content: "\F286";
+  font-family: bootstrap-icons !important;
+}
+
+.accordion-button::after {
+  background: unset;
+  content: "\F282" !important;
+  font-family: bootstrap-icons !important;
+}
+
+/* team Css  */
+#team {
+  background: rgb(21, 0, 48);
+  background: linear-gradient(145deg,
+      rgba(21, 0, 48, 1) 50%,
+      rgba(92, 88, 143, 1) 100%);
+  padding: 100px 0;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-img {
+  margin-bottom: 15px;
+}
+
+.team-img img {
+  border-radius: 100%;
+}
+
+p.deg {
+  color: #35fff3;
+}
+
+#join {
+  background: rgb(16, 1, 31);
+  background: linear-gradient(145deg,
+      rgba(16, 1, 31, 1) 50%,
+      rgba(92, 88, 143, 1) 100%);
+  padding: 100px 0;
+  text-align: center;
+}
+
+#join a {
+  font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+/* footer Css  */
+#footer {
+  background: #fff;
+  padding: 40px 0px;
+}
+
+.ft-title {
+  font-weight: bold;
+}
+
+#footer ul {
+  display: flex;
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#footer ul li a {
+  color: #000;
+  text-decoration: none;
+  padding: 0px 8px;
+}
+
+#footer ul li a img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#footer ul li a i {
+  margin-right: 10px;
+}
+
+.social-media {
+  margin-top: 80px;
+}
+
+.divider {
+  padding-top: 50px;
+  border-bottom: 2px solid #fff;
+}
+
+.space {
+  margin-top: 20px;
+}
+
+.list p {
+  color: #fff;
+}
+
+.btnWrapper {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+section#rating {
+  background-color: #C0F4FE;
+  padding: 100px 0px;
+}
+
+.rating-img img {
+  width: 160px;
+}
+
+.rating-box {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 30px;
+  box-shadow: 10px 10px 0px 0px;
+}
+
+.rating-title {
+  padding-bottom: 20px;
+}
+
+.list img {
+  width: 70%;
+}
+
+.list {
+  color: #fff;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 6px;
+}
+
+input#Description {
+  padding: 25px;
+}
+
+label {
+  padding-bottom: 8px;
+}
+
+.list h5 {
+  padding-bottom: 16px;
+}
+
+.footer_img img {
+  float: left;
+}
+
+.top_header {
+  background-color: #002658;
+  padding: 10px;
+}
+
+.top_header .nav-item a {
+  color: #fff;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+}
+
+button.btn.nft-btn {
+  border-radius: 20px;
+  padding: unset;
+  width: 150px;
+  height: 35px;
+}
+
+.rating-box h2 {
+  font-size: 28px;
+}
+
+.rating-img {
+  padding: 5px 0px;
+}
+
+ .active{
+   background-color:#00AFD2;
+   color:#fff;
+ }
+ .active2{
+   color:#fff;
+   border-bottom: 2px solid #282E35;
+ 
+ }
+  
+ 
