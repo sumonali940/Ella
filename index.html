@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+
+    <title>Responsive Landing Page</title>
+    <style>
+        @media only screen and (min-width:768px) and (max-width:1366px) {
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            section#hero {
+                background-image: url('img/first_bg.png') !important;
+                padding-top: 75px;
+                padding-bottom: 280px;
+            }
+			#header a{
+				font-size:16px !important;
+			}
+			ul.navbar-nav .nav-item{
+				padding:0px 2px !important;
+			}
+            .hero-content h2 {
+                color: #fff !important;
+            }
+            .footer_img img {
+                width: 80%;
+            }
+
+            .hero-content p {
+                color: #fff !important;
+                width: 60%;
+            }
+
+            section#about {
+                background-image: url('img/Rectangle10.png') !important;
+            }
+
+            .about-top {
+                margin-top: -174px;
+                background: #fff;
+                border-radius: 37px;
+                padding: 70px;
+            }
+
+            section#covarage {
+                background-image: url('img/cute-family-playing-summer-field.png') !important;
+                height: 870px;
+                background-position: right;
+                padding-top: 20px;
+            }
+
+            .covarage-top {
+                margin-top: -174px;
+                border-radius: 37px;
+                padding: 70px;
+            }
+
+            .content-area2 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                margin-top: -70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 20px;
+            }
+
+            .content-area3 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                margin-top: -70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-area4 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .content-area5 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .box-title h3 {
+                padding: 20px 0px;
+            }
+
+            .box-des {
+                padding-bottom: 20px;
+            }
+
+            .box-image img {
+                width: 80px;
+            }
+
+            .box-des {
+                text-align: center;
+            }
+
+            .mobileShow {
+                display: none;
+            }
+
+            #submitBtn {
+                position: absolute;
+                top: 4px;
+                right: -45px;
+                border-radius: 20px;
+            }
+
+            #search {
+                position: relative;
+                border-radius: 20px;
+                padding: 5px;
+            }
+
+            .search {
+                position: relative;
+                border-radius: 20px;
+            }
+
+
+        }
+
+        @media only screen and (min-width:1367px) {
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            section#hero {
+                background-image: url('img/first_bg.png') !important;
+                padding-top: 75px;
+                padding-bottom: 280px;
+            }
+            .footer_img img {
+                width: 80%;
+            }
+            .hero-content h2 {
+                color: #fff !important;
+            }
+
+            .hero-content p {
+                color: #fff !important;
+                width: 60%;
+            }
+
+            section#about {
+                background-image: url('img/Rectangle10.png') !important;
+            }
+
+            .about-top {
+                margin-top: -174px;
+                background: #fff;
+                border-radius: 37px;
+                padding: 70px;
+            }
+
+            section#covarage {
+                background-image: url('img/cute-family-playing-summer-field.png') !important;
+                height: 870px;
+                background-position: right;
+                padding-top: 20px;
+            }
+
+            .covarage-top {
+                margin-top: -174px;
+                border-radius: 37px;
+                padding: 70px;
+            }
+
+            .content-area2 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                margin-top: -70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-right: 20px;
+            }
+
+            .content-area3 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                margin-top: -70px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .content-area4 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+                margin-right: 20px;
+            }
+
+            .content-area5 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            .box-title h3 {
+                padding: 20px 0px;
+            }
+
+            .box-des {
+                padding-bottom: 20px;
+            }
+
+            .box-image img {
+                width: 80px;
+            }
+
+            .box-des {
+                text-align: center;
+            }
+
+            .mobileShow {
+                display: none;
+            }
+
+            #submitBtn {
+                position: absolute;
+                top: 4px;
+                right: -15px;
+                border-radius: 20px;
+            }
+
+            #search {
+                position: relative;
+                border-radius: 20px;
+                padding: 5px;
+            }
+
+            .search {
+                position: relative;
+                border-radius: 20px;
+            }
+        }
+		@media only screen and (min-width:992px) and (max-width:1199px){
+			input#search {
+			width: 100% !important;
+		}
+
+		button#submitBtn {
+			right: 6px !important;
+		}
+
+		a.navbar-brand {
+			width: 17% !important;
+		}
+		}
+
+        @media only screen and (max-width:767px) {
+            body {
+                font-family: 'Poppins', sans-serif;
+            }
+
+            section#hero {
+                background-image: url('img/first_bg.png') !important;
+                padding-top: 75px;
+                padding-bottom: 280px;
+            }
+
+            .hero-content h2 {
+                color: #fff !important;
+                font-size: 28px !important;
+            }
+
+            .hero-content p {
+                color: #fff !important;
+                width: 80%;
+            }
+
+            section#about {
+                background-image: url('img/Rectangle10.png') !important;
+            }
+
+            .about-top {
+                margin-top: -174px;
+                background: #fff;
+                border-radius: 37px;
+                padding: 30px;
+            }
+
+            section#covarage {
+                background-image: url('img/cute-family-playing-summer-field.png') !important;
+                height: 870px;
+                background-position: right;
+                padding-top: 20px;
+            }
+
+            .covarage-top {
+                margin-top: -174px;
+                border-radius: 37px;
+                padding: 0px;
+            }
+
+            .content-area2 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                margin-top: -70px;
+            }
+
+            .content-area3 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                margin-top: 20px;
+            }
+
+            .content-area4 {
+                background: #fff;
+                padding: 75px;
+                border-radius: 35px;
+                margin-top: 20px;
+            }
+
+            .content-area5 {
+                background: #fff;
+                border-radius: 35px;
+                padding: 75px;
+                margin-top: 20px;
+            }
+
+            .box-image img {
+                width: 80px;
+            }
+
+            a.navbar-brand {
+                width: 60%;
+            }
+
+            .hero-content {
+                padding: 0px 30px;
+            }
+
+            .rating-title h2 {
+                font-size: 28px !important;
+            }
+
+            .rating-box {
+                margin-bottom: 20px !important;
+            }
+
+            #footer ul li a {
+                color: #000;
+                text-decoration: none;
+                padding: 0px 8px;
+                font-size: 10px !important;
+                text-align: center;
+            }
+
+            .footer_img img {
+                width: 80%;
+            }
+
+            .footer_right_cols {
+                padding: 20px;
+            }
+
+            .footer_img {
+                padding: 20px;
+            }
+
+            .box-title h3 {
+                padding: 20px 0px;
+            }
+
+            .box-des {
+                padding-bottom: 20px;
+            }
+
+
+        }
+
+        @media(max-width:991px) {
+            .top_header {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top_header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <ul class="nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="claim_assessment.html">Claim Assessment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms_condition.html">Term And Condition</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SIGN UP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOG IN</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <div class="search" style="">
+                        <form action="#">
+                            <input type="search" placeholder="" id="search" style="">
+                            <button type="submit" id="submitBtn" style=""><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header area -->
+    <header id="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link actv" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link actv" href="#about">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link actv" href="#covarage">OUR COVERAGE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link actv" href="#rating">Rating & Reviews</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link actv" href="#footer-choise-us">CONTACT US</a>
+                            </li>
+                            <div class="mobileShow">
+                                <li class="nav-item">
+                                    <a class="nav-link actvs" href="claim_assessment.html">Claim Assessment</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link actvs" href="terms_condition.html">Term And Condition</a>
+                                </li>
+								<li class="nav-item">
+									<a class="nav-link" href="about.html">About Us</a>
+								</li>
+                                <li class="nav-item">
+                                    <a class="nav-link actvs" href="#">SIGN UP</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link actvs" href="#">LOG IN</a>
+                                </li>
+                            </div>
+                        </ul>
+                        <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header area end-->
+
+    <!-- Hero area -->
+    <section id="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <div class="hero-content">
+                        <h2>Draudimo insurance</h2>
+                        <p>Protecting you from the unexpected, one policy at a time.</p>
+                        <button class="btn nft-btn" type="button">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero area end -->
+
+
+    <!-- About area -->
+    <section id="about">
+        <div class="container about-top">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="content-area">
+                        <h2>ABOUT US</h2>
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="media">
+                        <p>
+                            Draudimo insurance was founded on 2012 , Draudimo Insurance is a trusted partner in life's
+                            journey, providing a shield against the unpredictable and unexpected. When the unexpected
+                            strikes, it's easy to feel lost and overwhelmed, but with the right insurance coverage,
+                            individuals and businesses can feel a sense of security and peace of mind.</p>
+
+                        <p>Like a sturdy lighthouse standing tall amidst a stormy sea, an insurance company is a beacon
+                            of hope in the face of adversity. It offers a safe haven for those who want to protect their
+                            assets and loved ones, allowing them to navigate life's challenges with confidence.</p>
+
+                        <p>Draudimo Insurance is more than just a provider of policies and premiums. It is a source of
+                            comfort and support, with a team of experts ready to lend a helping hand when it's needed
+                            most. Whether it's navigating the claims process or finding the right coverage for a unique
+                            situation, an insurance company is there every step of the way.</p>
+
+                        <p>In a world of uncertainty, an Draudimpo Insurance is a steady hand, providing a foundation of
+                            stability and security. It's a partner for life, always ready to provide protection and
+                            peace of mind, no matter what the future holds.</p>
+
+                        </p>
+                        <button class="btn nft-btn" type="button">LEARN MORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About area end -->
+
+    <!-- Covarage area -->
+    <section id="covarage">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="content-area">
+                        <h2 style="color:#fff;">OUR COVERAGE</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Covarage area end -->
+
+
+
+    <section id="coverage-section">
+        <div class="container covarage-top">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="content-area2">
+                        <div class="box-image">
+                            <img src="img/Vector Smart Object.png" alt="">
+                        </div>
+                        <div class="box-title">
+                            <h3>Product Insurance </h3>
+                        </div>
+                        <div class="box-des">
+                            <p>Product insurance provides important protection for businesses that sell or manufacture
+                                products, helping them mitigate the financial risks associated with product defects, theft,
+                                and other hazards.
+                            </p>
+                        </div>
+                        <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                    </div>
+                    <div class="content-area4">
+                    <div class="box-image">
+                        <img src="img/Vector Smart Object.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h3>Liability Insurance</h3>
+                    </div>
+                    <div class="box-des">
+                        <p>Liability insurance is an important type of insurance for individuals and businesses to
+                            consider, as it can provide critical protection against the financial risks associated with
+                            lawsuits and legal claims.
+                        </p>
+                    </div>
+                    <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                </div>
+                <div class="content-area4">
+                    <div class="box-image">
+                        <img src="img/Vector Smart Object.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h3>Blockchain Insurance</h3>
+                    </div>
+                    <div class="box-des">
+                        <p>Blockchain insurance, also known as blockchain-based insurance, is a type of insurance policy
+                            that utilizes blockchain technology to provide transparency, security, and efficiency in the
+                            insurance process. Blockchain technology enables the creation of a decentralized and
+                            immutable ledger that can be used to record insurance transactions and claims.
+                        </p>
+                    </div>
+                    <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                </div>
+
+                </div>               
+                <div class="col-md-6">
+                <div class="content-area3">
+                    <div class="box-image">
+                        <img src="img/Vector Smart Object.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h3>Cyber Insurance</h3>
+                    </div>
+                    <div class="box-des">
+                        <p>Cyber insurance can provide important protection for businesses and individuals in an
+                            increasingly connected world where cyber attacks and data breaches are becoming more common.
+                        </p>
+                    </div>
+                    <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                </div>
+                <div class="content-area5">
+                    <div class="box-image">
+                        <img src="img/Vector Smart Object.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h3>Private Asset Insurance</h3>
+                    </div>
+                    <div class="box-des">
+                        <p>Private asset insurance is a type of insurance policy that provides coverage for high-value
+                            assets owned by individuals or families. This type of insurance is designed to protect
+                            assets that may not be covered by standard homeowners or auto insurance policies. Private
+                            asset insurance can provide coverage for a wide range of high-value assets, including fine
+                            art, jewelry, collectibles, luxury vehicles, and high-value homes. Policies can be
+                            customized to meet the specific needs of the policyholder, with coverage limits and
+                            deductibles tailored to the value of the assets being insured.
+                        </p>
+                    </div>
+                    <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                </div>
+                <div class="content-area5">
+                    <div class="box-image">
+                        <img src="img/Vector Smart Object.png" alt="">
+                    </div>
+                    <div class="box-title">
+                        <h3>Risk Insurance</h3>
+                    </div>
+                    <div class="box-des">
+                        <p>Risk insurance provides an important layer of protection for individuals and businesses
+                            against the financial impact of unexpected events or risks. By providing coverage for
+                            financial losses, risk insurance can help policyholders to mitigate the financial risks
+                            associated with unforeseen events and maintain financial stability.
+                        </p>
+                    </div>
+                    <button class="btn nft-btn" type="button">FIND OUT MORE</button>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Road Map arae -->
+    <section id="choise-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-title" style="text-align: left;color:#fff">
+                        <h2>WHY CHOOSE US</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="list-area">
+                        <div class="list">
+                            <p>At our insurance company, we understand that there are many choices out there when it
+                                comes to insurance. That's why we want to make it clear why choosing us is the right
+                                decision for you.</p>
+
+                            <p>First and foremost, we are committed to putting our customers first. Our team of experts
+                                is dedicated to providing personalized attention and exceptional service, helping our
+                                customers navigate the </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="list">
+                        <p>complexities of insurance with ease. We take the time to understand our customers' unique
+                            needs and priorities, and work closely with them to develop customized insurance plans that
+                            fit their budget and lifestyle.</p>
+
+                        <p> We also offer a wide range of innovative and reliable insurance solutions. Whether it's auto
+                            insurance, home insurance, life insurance, or any other type of coverage, our policies are
+                            designed to provide comprehensive protection against unexpected events. We are</p>
+                    </div>
+                </div>
+            </div>
+            <div class="btnWrapper">
+                <button class="btn nft-btn" type="button">READ MORE</button>
+            </div>
+        </div>
+    </section>
+    <!-- Road Map arae end -->
+
+    <!-- FAQ's area -->
+    <section id="rating">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="rating-title">
+                        <h2>RATING & REVIEWS</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="rating-box">
+                        <h2>Rating : 4.7</h2>
+                        <div class="rating-img"><img src="img/Vector Smart Object copy 5.png" alt=""></div>
+                        <h2>Review:</h2>
+                        <p>"I recently had to file a claim with
+                            Draudimo Insurance Company and was pleased
+                            with the prompt and efficient service I received.
+                            They processed my claim quickly and I received
+                            my payout without any issues."</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rating-box">
+                        <h2>Rating : 4.7</h2>
+                        <div class="rating-img"><img src="img/Vector Smart Object copy 5.png" alt=""></div>
+                        <h2>Review:</h2>
+                        <p>"Draudimo Insurance Company has been my
+                            insurance provider for several years and I have
+                            been very satisfied with their coverage and
+                            pricing. Their customer service team is also
+                            very helpful and responsive."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-md-6">
+                    <div class="rating-box">
+                        <h2>Rating : 4.7</h2>
+                        <div class="rating-img"><img src="img/Vector Smart Object copy 5.png" alt=""></div>
+                        <h2>Review:</h2>
+                        <p>"I had a great experience with Draudimo Insurance
+                            Company when purchasing my policy. The
+                            process was easy and straightforward, and the
+                            premiums were very reasonable."</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="rating-box">
+                        <h2>Rating : 4.7</h2>
+                        <div class="rating-img"><img src="img/Vector Smart Object copy 5.png" alt=""></div>
+                        <h2>Review:</h2>
+                        <p>“Draudimo Insurance Company has been very
+                            helpful in answering my questions and addressing
+                            my concerns. I feel confident that I am in good
+                            hands with them as my insurance provider."</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row space">
+                <div class="col-md-6">
+                    <div class="rating-box">
+                        <h2>Rating : 4.7</h2>
+                        <div class="rating-img"><img src="img/Vector Smart Object copy 5.png" alt=""></div>
+                        <h2>Review:</h2>
+                        <p>"I recently had to make a change to my policy
+                            with Draudimo Insurance Company and their
+                            customer service team was very helpful in guiding
+                            me through the process. I appreciate their
+                            professionalism and knowledge."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review's area end -->
+
+    <!-- Contact US -->
+    <section id="footer-choise-us">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="contact-title" style="text-align: left;color:#fff">
+                        <h2>CONTACT US</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="list-area">
+                        <div class="list">
+                            <img src="img/talk.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="list">
+                        <h5>Please fill in the following information and our specialist will contact you to customize
+                            for you </h5>
+                        <label for="name">Name:</label><br />
+                        <input type="text" name="name"><br />
+                        <label for="number">Contact Number:</label><br />
+                        <input type="text" name="name" id="number"><br />
+                        <label for="email">Email:</label><br />
+                        <input type="text" name="email" id="email"><br />
+                        <label for="Description">Description of you enquiry:</label><br />
+                        <input type="text" name="Description" id="Description">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Us -->
+
+
+    <!-- Footer area -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer_img">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-9">
+                    <div class="footer_right_cols">
+                        <h5>Draudimo Insurance was founded in 2012</h5>
+                        <ul>
+                            <li><a href="#">Sidemap</a></li>|
+                            <li><a href="terms_condition.html">Terms and condition</a></li>|
+                            <li><a href="#">Privecy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer area end -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
